@@ -1,0 +1,105 @@
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 6.5px;
+  margin-left: 0;
+  span {
+    position: absolute;
+    left: 10px;
+    color: #a1a5b7;
+    svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+  }
+  input {
+    background: #f9f9f9;
+    border-color: #f9f9f9;
+    color: #000;
+    transition: color 0.2s ease;
+    appearance: none;
+    background-clip: padding-box;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px 13px;
+    padding-left: 45px;
+    @include fontInter(14.3px, 500);
+    border-radius: 6.175px;
+    line-height: 1.5;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #a1a5b7;
+    }
+  }
+}
+.search-categories .ant-select-selection__placeholder {
+  @include fontInter(14.3px, 500);
+  color: #a1a5b7;
+}
+.search-categories .ant-select-selection-selected-value {
+  @include fontInter(14.3px, 500);
+
+}
+.search-categories .ant-select-selection {
+  box-shadow: none !important;
+}
+.search-categories .ant-select-focused .ant-select-selection,
+.search-categories .ant-select-selection:focus,
+.search-categories .ant-select-selection:active {
+  box-shadow: none !important;
+}
+.search-categories .ant-select-selection {
+  border: none;
+  background: #f9f9f9;
+  border-color: #f9f9f9;
+  height: 41.41px;
+  border-radius: 6.175px;
+  overflow: hidden;
+}
+.search-categories .ant-select-selection__rendered {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.status-select {
+  input {
+    background: #f9f9f9;
+    border-color: #f9f9f9;
+    color: #5e6278;
+    transition: color 0.2s ease;
+    appearance: none;
+    background-clip: padding-box;
+    display: block;
+    border: none;
+    padding: 10px 13px;
+    @include fontInter(14.3px, 500);
+    border-radius: 6.175px;
+    line-height: 1.5;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #a1a5b7;
+    }
+  }
+  .el-range-editor {
+    background: #f9f9f9;
+    border-color: #f9f9f9;
+  }
+}
+.popper__arrow {
+  display: none !important;
+}
+.el-popper {
+  margin-top: 2px !important;
+  box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15) !important;
+}
+.el-select-dropdown {
+  border: none !important;
+}

@@ -1,0 +1,106 @@
+.product_table {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 15px;
+  .el-table__row {
+    &:hover {
+      background-color: #fff !important;
+    }
+  }
+  .el-table__cell {
+    border-bottom: 1px dashed #eff2f5 !important;
+    .cell {
+      padding-left: 0 !important;
+    }
+  }
+}
+.el-checkbox__input {
+  .el-checkbox__inner {
+    background-color: #eff2f5;
+    border-radius: 0.45rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    &:focus-visible {
+      outline: none;
+      border: none;
+    }
+    &:hover {
+      border: none;
+    }
+    &::after {
+      left: 40%;
+      top: 3.5px;
+    }
+  }
+  .is-checked {
+    background-color: #409eff;
+  }
+}
+
+.has-gutter {
+  tr {
+    th {
+      .cell {
+        color: #b5b5c3 !important;
+        @include fontPoppins(12px, 600);
+      }
+    }
+  }
+}
+
+.table-action-btn {
+  color: #7e8299 !important;
+  border-color: #f5f8fa !important;
+  background-color: #f5f8fa !important;
+  padding: calc(0.55 * 13px + 1px) calc(1.25 * 13px + 1px) !important;
+  border-radius: 0.325 * 13px !important;
+  .el-dropdown-link {
+    font-size: 0.925 * 13px !important;
+    color: #7e8299 !important;
+  }
+}
+.el-dropdown-menu__item {
+  margin: 0 0.75 * 13px !important;
+  border-radius: 0.475rem;
+}
+.table-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  background-color: #f5f8fa;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 6.175px;
+  background: #ffffff;
+  border: 1px solid #ebeef5;
+}
+
+// html table
+
+.html-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+}
+.html-table-header {
+  background: #fafbfc;
+  th {
+    padding: 24px 40px;
+  }
+}
+.html-table-items {
+  td {
+    padding: 24px 40px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .table-image {
+    width: 40px;
+    height: 40px;
+  }
+}

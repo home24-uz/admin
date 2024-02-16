@@ -1,0 +1,126 @@
+.login_container {
+  height: 100vh;
+  width: 100%;
+  //   background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
+  //   background-image: url("../../../images/bg-login.png");
+  background-color: #181c32;
+  background-image: url(~/assets/images/bg-login.png);
+  //   background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-y: bottom;
+}
+.login_block {
+  //   height: 100vh;
+  width: 500px;
+  padding: 48px !important;
+  border-radius: 0.475rem !important;
+  background-color: #fff;
+}
+.login_header {
+  display: flex;
+  justify-content: center;
+  h1 {
+    color: #181c32 !important;
+    @include fontPoppins(22px, 600);
+  }
+}
+.login_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  label {
+    color: #181c32 !important;
+    @include fontPoppins(15px, 600);
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: #009ef7;
+    @include fontPoppins(15px, 600);
+  }
+  input {
+    padding: 10.5px 19.5px;
+    @include fontPoppins(15px, 500);
+    line-height: 24px;
+    border-radius: 0.625rem;
+    border-color: #f5f8fa;
+    color: #181c32 !important;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    background-color: rgb(232, 240, 254) !important;
+    border: none;
+    &:focus {
+      border-color: #f5f8fa;
+      outline: none;
+    }
+  }
+}
+.login_btn {
+  background: #009ef7;
+  color: #fff;
+  @include fontPoppins(15px, 600);
+  padding: 11.7px 23.7px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1.25rem !important;
+}
+
+// sign in
+
+.signin-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .signin-bg {
+    background-image: url(~/assets/images/auth-bg.png);
+    background-size: 100%;
+  }
+  .form-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   
+  }
+  .form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.5rem !important;
+    h1 {
+      @include fontPoppins(1.75rem, 700);
+      margin-bottom: 0.75rem !important;
+      color: #181c32;
+      text-align: center;
+    }
+  }
+  .form-card {
+    width: 500px;
+    padding: 2.5rem;
+    input {
+      color: #5e6278;
+      border: 1px solid #e1e3ea;
+      width: 100%;
+      padding: 0.775rem 1rem;
+      margin-bottom: 2rem;
+      background-color: #fff !important;
+    }
+    .form-btn {
+      width: 100%;
+      padding: calc(0.775rem + 1px) calc(1.5rem + 1px);
+      background-color: #009ef7;
+      border-radius: 0.475rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      @include fontPoppins(1.1rem, 500);
+    }
+  }
+}

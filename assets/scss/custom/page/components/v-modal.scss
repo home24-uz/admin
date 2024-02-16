@@ -1,0 +1,28 @@
+.vm--container {
+  z-index: 1001 !important;
+}
+
+.add_modal-container {
+  border-radius: 6.125;
+  border-radius: 4.45px;
+  background: #fff;
+}
+.padding_characteristic_modal {
+  padding: 24px;
+  padding-top: 40px;
+}
+.add_modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ebedf3;
+}
+.modal-title {
+  h2 {
+    @include fontPoppins(16.5px, 500);
+    color: #181c32;
+    line-height: 1.2;
+  }
+}
+.add_modal-body {
+  padding: 16px 24px;
+  padding-bottom: 0;
+}

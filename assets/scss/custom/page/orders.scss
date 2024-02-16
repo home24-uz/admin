@@ -1,0 +1,125 @@
+.order-links {
+  @include fontInter(14px, 500);
+  line-height: 24px;
+  color: #000;
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 5.46px;
+  margin-top: 16px;
+  margin-right: 5px;
+  &:hover {
+    color: #000;
+    background: rgba(#000, 0.1);
+  }
+  transition: all 0.4s ease-in;
+  span {
+    margin-right: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}
+.active-orders {
+  color: #000;
+  background: rgba(#000, 0.1);
+}
+.order-light-blue {
+  background: #18b3bd;
+}
+.order-black {
+  background: #3699ff;
+}
+.order-grey {
+  background: grey;
+}
+.order-blue {
+  background: rgb(27, 69, 236);
+}
+.order-yellow {
+  background: #ffa909;
+}
+.order-purple {
+  background: rgb(243, 18, 213);
+}
+.order-green {
+  background: rgb(11, 95, 55);
+}
+.order-red {
+  background: rgb(243, 18, 18);
+}
+.order-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.order-detail-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+.order-details-items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16.25px;
+  padding-bottom: 16.25px;
+  box-shadow: inset 0 0 0 9999px transparent;
+  // text-transform: capitalize;
+  border-bottom: 1px solid #f4f4f4;
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  span {
+    svg {
+      width: 19.5px;
+      height: 19.5px;
+      margin-right: 6.5px;
+    }
+    color: #a1a5b7;
+    @include fontInter(13.975, 500);
+  }
+  p {
+    color: #000;
+    @include fontInter(13.975, 600);
+  }
+  .order-user-avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 9.5px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.order-user {
+  display: flex;
+  align-items: center;
+}
+.abs_img {
+  position: absolute;
+  opacity: 0.3;
+  width: 175px;
+  height: 175px;
+  right: 10px;
+  top: 0;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.order-adress-list {
+  li {
+    @include fontInter(13px, 400);
+    color: rgb(0, 0, 0, 0.7);
+    margin-bottom: 3px;
+  }
+}
+.order-edit-grid {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 16px;
+}

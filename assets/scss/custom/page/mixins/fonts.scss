@@ -1,0 +1,16 @@
+@mixin fontPoppins($fontSize, $fontWeight) {
+  font-family: "Poppins", Helvetica, "sans-serif";
+  font-weight: $fontWeight !important;
+  font-size: $fontSize !important;
+}
+@mixin fontInter($fontSize, $fontWeight) {
+  font-family: "Inter", sans-serif;
+  font-weight: $fontWeight !important;
+  font-size: $fontSize !important;
+}
+@mixin fontTTinterface($fontSize, $fontWeight) {
+  font-family: "TT Interfaces";
+  font-weight: $fontWeight !important;
+  font-size: $fontSize !important;
+  font-style: normal;
+}

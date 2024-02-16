@@ -1,0 +1,228 @@
+.add-btn {
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease,
+    -webkit-box-shadow 0.15s ease;
+  border-radius: 5.46px;
+  @include fontInter(12.025px, 600);
+
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  span {
+    color: #fff;
+    svg {
+      width: 18px;
+      height: 18px;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  svg {
+    margin-right: 8px;
+
+    transition: 3s;
+  }
+}
+.text-black-btn {
+  span {
+    color: #000 !important;
+  }
+}
+.add-header-btn {
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+.add-header-btn-padding {
+  padding: 7.15px 9.75px !important;
+}
+.add-btn-padding {
+  padding: 11.45px 20.5px !important;
+}
+.add-btn-padding-icon {
+  padding: 16px 56px;
+}
+.add-btn-primary {
+  color: #ffffff;
+  background-color: #3699ff;
+  border-color: #3699ff;
+  &:hover {
+    color: #ffffff;
+    background-color: #187de4;
+    border-color: #187de4;
+  }
+}
+.btn-light-primary {
+  color: #3699ff;
+  background-color: #e1f0ff;
+  border-color: transparent;
+  @include fontInter(12.025px, 600);
+
+  &:hover {
+    color: #ffffff;
+    background-color: #3699ff;
+    border-color: transparent;
+  }
+}
+.btn-outline-primary {
+  color: #3699ff;
+  background-color: transparent;
+  border: 1px solid #3699ff;
+  @include fontTTinterface(18px, 600);
+  transition: 0.3s;
+  line-height: 24px;
+  &:hover {
+    color: #3699ff;
+
+    background-color: #e1f0ff;
+    border: 1px solid #e1f0ff;
+    svg {
+      path {
+        fill: #3699ff;
+      }
+    }
+  }
+}
+.btn-primary-hover {
+  &:hover {
+    background-color: #009ef7 !important;
+    color: #f1faff !important;
+    background-color: #f1faff;
+  }
+}
+.btn {
+  border: none;
+}
+//
+.outline-btn {
+  border-radius: 5.46px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  @include fontTTinterface(18px, 600);
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease,
+    -webkit-box-shadow 0.15s ease;
+}
+.outline-blue-btn {
+  background: #3699ff;
+  color: #fff;
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      stroke: #fff;
+      fill: #fff;
+    }
+  }
+}
+.outline-light-blue-btn {
+  background: #e1f0ff;
+  color: #5899ff;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    color: #ffffff;
+    background-color: #3699ff;
+    border-color: transparent;
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+.outline-light-gray-btn {
+  background: #fbfafc;
+  color: #000;
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.outline-light-green-btn {
+  color: #1bc5bd;
+  background-color: #c9f7f5;
+  border-color: transparent;
+  &:hover {
+    color: #ffffff;
+    background-color: #1bc5bd;
+    border-color: transparent;
+    svg {
+      path {
+        stroke: #fff;
+        // fill: #fff;
+      }
+    }
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    path {
+      stroke: #1bc5bdff;
+      // fill: #fff;
+    }
+  }
+}
+.outline-white-btn {
+  background: #fff;
+  color: #000;
+}
+// from bts
+
+.form-btn {
+  padding: 18px 40px;
+  border-radius: 8px;
+  @include fontTTinterface(18px, 600);
+  line-height: 24px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-btn-primary {
+  background: #3699ff;
+  color: #ffffff;
+  &:hover {
+    background: lighten(#3699ff, 10%);
+  }
+}
+.form-outline-transparent {
+  background: transparent;
+  border: 1px solid #e4e6ef;
+  color: #a1a5bf;
+  &:hover {
+    background: lighten(grey, 40%);
+  }
+}
+@media (max-width: 1440px) {
+  .add-btn-padding {
+    padding: 8.45px 13px;
+  }
+  .btn-outline-primary {
+    @include fontTTinterface(13px, 600);
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .outline-btn {
+    border-radius: 5.46px;
+    @include fontTTinterface(18px, 600);
+  }
+  .form-btn {
+    padding: 9px 13px;
+    border-radius: 5.46px;
+    @include fontTTinterface(13px, 600);
+    line-height: 18px;
+  }
+}

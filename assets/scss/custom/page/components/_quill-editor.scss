@@ -1,0 +1,42 @@
+// --- quill editor ---
+
+.quill-editor {
+  border-radius: 0.475rem;
+}
+.ql-toolbar.ql-snow {
+  border: 1px solid #eff2f5;
+  border-radius: 0.475rem;
+}
+.ql-container.ql-snow {
+  border: 1px solid #eff2f5;
+  border-radius: 0.475rem;
+}
+.ql-container {
+  height: 447px !important;
+}
+.ql-toolbar {
+  border-radius: 8px 8px 0 0 !important;
+  border: 1px solid #e4e6ef !important;
+  border-bottom: 0 !important;
+}
+.ql-container {
+  border-radius: 0px 0px 8px 8px !important;
+  border: 1px solid #e4e6ef !important;
+}
+.ql-picker-label {
+}
+.product-editor {
+  .ql-container {
+    height: 173px !important;
+  }
+}
+@media (max-width: 1440px) {
+  .ql-container {
+    height: 200px !important;
+  }
+  .product-editor {
+    .ql-container {
+      height: 173px !important;
+    }
+  }
+}
