@@ -43,6 +43,9 @@ export default {
     },
     baseURL: process.env.BASE_URL,
   },
+  env: {
+    baseUrl: process.env.BASE_URL || "https://api.home24.uz/api",
+  },
   components: true,
 
   buildModules: ["@nuxtjs/svg", "@nuxt/postcss8", "@nuxtjs/dotenv"],
